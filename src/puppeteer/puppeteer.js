@@ -35,7 +35,7 @@ const editCOPE = async (page, opcion) => {
 
         if (changeConfirm) {
 
-            // await page.click('.btn.btn-danger');
+             await page.click('.btn.btn-danger');
 
             return true;
         } else {
@@ -92,7 +92,7 @@ const editModalidad = async (page, opcion) => {
         }, modalidad);
 
         if (changeConfirm) {
-            // await page.click('.btn.btn-danger');
+             await page.click('.btn.btn-danger');
             return true;
         } else {
             return false;
@@ -169,7 +169,7 @@ const editCOPEandModalidad = async (page, opciones) => {
 
 
         if (changeCOPEConfirm && changeModalidadConfirm) {
-            // await page.click('.btn.btn-danger');
+             await page.click('.btn.btn-danger');
             return true
         } else {
             return false;
@@ -417,17 +417,17 @@ const editZonas = async (page, opciones, prioridad, browser) => {
 
         }
 
-        // const buttonText='Guardar'
+         const buttonText='Guardar'
 
-        // const button = await page.$x(`//button[contains(text(), "${buttonText}")]`);
+         const button = await page.$x(`//button[contains(text(), "${buttonText}")]`);
 
-        // if (button.length > 0) {
-        //     // Hacer clic en el botón
-        //     await button[0].click();
-        //     console.log(`Botón "${buttonText}" clicado.`);
-        // } else {
-        //     console.log(`No se encontró el botón "${buttonText}".`);
-        // }
+    if (button.length > 0) {
+         //Hacer clic en el botón
+           await button[0].click();
+            console.log(`Botón "${buttonText}" clicado.`);
+        } else {
+             console.log(`No se encontró el botón "${buttonText}".`);
+        }
 
 
         return true;

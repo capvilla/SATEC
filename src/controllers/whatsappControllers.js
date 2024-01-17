@@ -33,6 +33,7 @@ const reciveMessage = async (req, res) => {
             const message = messageObject[0];
             const number = message["from"]
             const text = getTextUser(message);
+            console.log({number});
             const numCorrect = numCorrection.correctionMex(number);
             const tarea = extraerTarea(text);
             // console.log(tarea);

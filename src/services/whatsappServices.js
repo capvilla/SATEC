@@ -9,7 +9,7 @@ function sendMessageWhatsApp(data) {
 
     const options = {
         host: "graph.facebook.com",
-        path: "/v18.0/214247958438048/messages",
+        path: "/v18.0/163224320217018/messages",
         method: "POST",
         body: data,
         headers: {

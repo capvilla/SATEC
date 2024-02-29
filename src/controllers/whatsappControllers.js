@@ -42,6 +42,7 @@ const reciveMessage = async (req, res) => {
 
             if (text != "") {
                 if (text === '!ayuda') {
+                    console.log(message);
                     console.log(text);
                     console.log(number);
                     console.log(numCorrect);

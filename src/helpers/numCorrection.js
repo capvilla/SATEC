@@ -9,7 +9,7 @@ const correctionMex = (num) => {
     if (num.startsWith("52") && num[2] === "1") {
         // Eliminamos el tercer dígito
         num = num.slice(0, 2) + num.slice(3);
-        return num
+        
     }
     return "" + num
 }
